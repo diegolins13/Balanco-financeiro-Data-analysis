@@ -32,7 +32,6 @@ with open('relatorio.txt', 'w') as rel:
   rel.write(f'Total de meses: {len(datas)}\n')
   rel.write(f'Total: $ {sum(lucPerd)}\n')
   rel.write(f'Variação da média: $ {sum(variacao) / (len(variacao) - 1) :.2f}\n')
-  rel.write(f'Total: $ {sum(lucPerd)}\n')
   rel.write(f'Média: $ {sum(lucPerd) / len(lucPerd) : .2f} \n')
   rel.write(f'Maior aumento nos lucros: {datas[variacao.index(max(variacao))]} ($ {max(variacao)})\n')
   rel.write(f'Maior aumento nos lucros: {datas[variacao.index(min(variacao))]} ($ {min(variacao)})\n')
